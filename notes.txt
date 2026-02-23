@@ -1,0 +1,9 @@
+docker run --name postgres-db `
+  -e POSTGRES_USER=gdg `
+  -e POSTGRES_PASSWORD=password `
+  -e POSTGRES_DB=gdg_db `
+  -p 5432:5432 `
+  -d postgres
+  
+  
+  
