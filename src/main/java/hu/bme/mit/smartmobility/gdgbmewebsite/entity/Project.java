@@ -1,5 +1,7 @@
 package hu.bme.mit.smartmobility.gdgbmewebsite.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -10,8 +12,13 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.Size;
 
+// id, title, github_link, tech_stack
 @Entity
 public class Project {
+
+	protected Project() {
+
+	}
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,6 +34,7 @@ public class Project {
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "user_id", nullable = false)
+	@JsonBackReference
 	private User user;
 
 	public Project(int id, @Size(min = 10) String title, String github_link, String tech_stack, User user) {

@@ -2,6 +2,8 @@ package hu.bme.mit.smartmobility.gdgbmewebsite.entity;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -12,7 +14,12 @@ import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 
 @Entity(name = "user_details")
+// id, email, fullName, profilePictureUrl, projects, attendedEvents
 public class User {
+
+	protected User() {
+
+	}
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,9 +34,11 @@ public class User {
 	private String profilePictureUrl;
 
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+	@JsonManagedReference
 	private List<Project> projects;
 
 	@ManyToMany(mappedBy = "attendees")
+	@JsonManagedReference
 	private List<Event> attendedEvents;
 
 	public User(int id, String email, String fullName, String profilePictureUrl, List<Project> projects,
