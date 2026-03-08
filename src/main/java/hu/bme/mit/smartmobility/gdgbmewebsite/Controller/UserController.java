@@ -1,4 +1,4 @@
-package hu.bme.mit.smartmobility.gdgbmewebsite.controller;
+package hu.bme.mit.smartmobility.gdgbmewebsite.Controller;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
@@ -21,11 +21,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import hu.bme.mit.smartmobility.gdgbmewebsite.entity.Project;
-import hu.bme.mit.smartmobility.gdgbmewebsite.entity.User;
-import hu.bme.mit.smartmobility.gdgbmewebsite.exception.UserNotFoundException;
-import hu.bme.mit.smartmobility.gdgbmewebsite.jpa.UserRepository;
-import hu.bme.mit.smartmobility.gdgbmewebsite.service.UserProjectService;
+import hu.bme.mit.smartmobility.gdgbmewebsite.Model.Project;
+import hu.bme.mit.smartmobility.gdgbmewebsite.Model.User;
+import hu.bme.mit.smartmobility.gdgbmewebsite.Exception.UserNotFoundException;
+import hu.bme.mit.smartmobility.gdgbmewebsite.Repository.UserRepository;
+import hu.bme.mit.smartmobility.gdgbmewebsite.Service.UserProjectService;
 import jakarta.validation.Valid;
 
 @RestController

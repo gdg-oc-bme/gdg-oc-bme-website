@@ -1,4 +1,4 @@
-package hu.bme.mit.smartmobility.gdgbmewebsite.security;
+package hu.bme.mit.smartmobility.gdgbmewebsite.Security;
 
 import static org.springframework.security.config.Customizer.withDefaults;
 

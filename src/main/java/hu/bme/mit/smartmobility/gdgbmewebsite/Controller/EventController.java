@@ -1,12 +1,12 @@
-package hu.bme.mit.smartmobility.gdgbmewebsite.controller;
+package hu.bme.mit.smartmobility.gdgbmewebsite.Controller;
 
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import hu.bme.mit.smartmobility.gdgbmewebsite.entity.Event;
-import hu.bme.mit.smartmobility.gdgbmewebsite.jpa.EventRepository;
+import hu.bme.mit.smartmobility.gdgbmewebsite.Model.Event;
+import hu.bme.mit.smartmobility.gdgbmewebsite.Repository.EventRepository;
 
 @RestController
 public class EventController {

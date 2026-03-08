@@ -1,12 +1,13 @@
-package hu.bme.mit.smartmobility.gdgbmewebsite.exception;
+package hu.bme.mit.smartmobility.gdgbmewebsite.Exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(code = HttpStatus.NOT_FOUND)
-public class ProjectNotFoundException extends RuntimeException {
+public class UserNotFoundException extends RuntimeException {
 
-	public ProjectNotFoundException(String message) {
+	public UserNotFoundException(String message) {
 		super(message);
 	}
+
 }
