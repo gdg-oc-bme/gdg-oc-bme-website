@@ -1,12 +1,12 @@
-package hu.bme.mit.smartmobility.gdgbmewebsite.controller;
+package hu.bme.mit.smartmobility.gdgbmewebsite.Controller;
 
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import hu.bme.mit.smartmobility.gdgbmewebsite.entity.Project;
-import hu.bme.mit.smartmobility.gdgbmewebsite.jpa.ProjectRepository;
+import hu.bme.mit.smartmobility.gdgbmewebsite.Model.Project;
+import hu.bme.mit.smartmobility.gdgbmewebsite.Repository.ProjectRepository;
 
 @RestController
 public class ProjectController {

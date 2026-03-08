@@ -1,15 +1,15 @@
-package hu.bme.mit.smartmobility.gdgbmewebsite.service;
+package hu.bme.mit.smartmobility.gdgbmewebsite.Service;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import hu.bme.mit.smartmobility.gdgbmewebsite.entity.Project;
-import hu.bme.mit.smartmobility.gdgbmewebsite.entity.User;
-import hu.bme.mit.smartmobility.gdgbmewebsite.exception.ProjectNotFoundException;
-import hu.bme.mit.smartmobility.gdgbmewebsite.exception.UserNotFoundException;
-import hu.bme.mit.smartmobility.gdgbmewebsite.jpa.ProjectRepository;
-import hu.bme.mit.smartmobility.gdgbmewebsite.jpa.UserRepository;
+import hu.bme.mit.smartmobility.gdgbmewebsite.Model.Project;
+import hu.bme.mit.smartmobility.gdgbmewebsite.Model.User;
+import hu.bme.mit.smartmobility.gdgbmewebsite.Exception.ProjectNotFoundException;
+import hu.bme.mit.smartmobility.gdgbmewebsite.Exception.UserNotFoundException;
+import hu.bme.mit.smartmobility.gdgbmewebsite.Repository.ProjectRepository;
+import hu.bme.mit.smartmobility.gdgbmewebsite.Repository.UserRepository;
 import jakarta.transaction.Transactional;
 
 @Service
